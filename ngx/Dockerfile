@@ -1,6 +1,6 @@
 FROM alpine:3.8 AS alpine-base
 WORKDIR /usr/local
-#更换apline的源为阿里云的
+#更换apline的源为腾讯云的---我的云主机用的腾讯云
 RUN echo "https://mirrors.tencent.com/alpine/v3.8/main/" > /etc/apk/repositories && \
     echo "https://mirrors.tencent.com/alpine/v3.8/community/" >> /etc/apk/repositories && \
     apk update && \
