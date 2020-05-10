@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  ngx-data:
+    build: ./ngx
+    image: ngx-data:v1.0
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./data:/www/html/data
+    ports:
+      - "8002:80"
